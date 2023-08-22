@@ -1,0 +1,39 @@
+@import url('../fonts/girloy/stylesheet.css');
+@import 'layout/index.scss';
+@import 'blocks/index.scss';
+:root {
+  --gray-1: #3a3a3a;
+  --gray-2: #616161;
+  --gray-3: #898989;
+  --gray-4: #b0b0b0;
+  --gray-5: #d8d8d8;
+  --light-background: #f4f5f7;
+  --white: #ffffff;
+  --primary: #e89f71;
+  --primary-rgba: 232, 159, 113;
+  --green: #2ec1ac;
+  --red: #e97171;
+  --black: #000000;
+  --blue: #262f56;
+
+  --container-size: 1240px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+button {
+  border: none;
+}

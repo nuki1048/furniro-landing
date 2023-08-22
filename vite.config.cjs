@@ -5,4 +5,5 @@ module.exports = {
     outDir: '../dist',
     emptyOutDir: false,
   },
+  publicDir: 'public',
 };

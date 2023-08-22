@@ -2,11 +2,510 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Furniro Landing</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link rel="stylesheet" href="sass/style.scss" />
   </head>
   <body>
-    <script type="module" src="/main.js"></script>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="hamburger-menu" data-hamburger-parent>
+            <div class="hamburger" data-hamburger-button>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <ul class="menu__box" data-hamburger-menu>
+              <div data-hamburger-close class="button-close">&#10006;</div>
+              <li>
+                <form class="search">
+                  <input
+                    type="search"
+                    class="search-input"
+                    name="search"
+                    placeholder="Search for minimalist chair"
+                  />
+                </form>
+              </li>
+              <li>
+                <a class="menu__item" href="#"
+                  >Products <img src="./assets/icons/arrow-down.svg"
+                /></a>
+              </li>
+              <li>
+                <a class="menu__item" href="#">
+                  Rooms <img src="./assets/icons/arrow-down.svg"
+                /></a>
+              </li>
+              <li>
+                <a class="menu__item" href="#"> nspirations </a>
+              </li>
+            </ul>
+          </div>
+          <a href="index.html">
+            <img src="./assets/icons/furniro-logo.svg" alt="Logo"
+          /></a>
+          <ul class="navbar_list">
+            <li class="navbar_item dropdown">
+              Products <img src="./assets/icons/arrow-down.svg" />
+            </li>
+            <li class="navbar_item dropdown">
+              Rooms <img src="./assets/icons/arrow-down.svg" />
+            </li>
+            <li class="navbar_item">Inspirations</li>
+          </ul>
+          <form class="search">
+            <input
+              type="search"
+              class="search-input"
+              name="search"
+              placeholder="Search for minimalist chair"
+            />
+          </form>
+          <div class="navbar-controls">
+            <img src="./assets/icons/heart-icon.svg" alt="Heart Icon" />
+            <img src="./assets/icons/cart-icon.svg" alt="Cart Icon" />
+            <img
+              src="./assets/promo-profile.jpg"
+              alt="Profile Image"
+              class="profile-logo"
+            />
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="background-color-1"></div>
+    <div class="background-color-2"></div>
+    <section class="promo">
+      <div class="container">
+        <div class="controls-wrapper">
+          <ul
+            id="main-slider-customize-thumbnails"
+            class="customize-thumbnails"
+          >
+            <li data-nav="1" aria-label="Carousel Page 1" class="dot"></li>
+            <li data-nav="2" aria-label="Carousel Page 1" class="dot"></li>
+            <li data-nav="3" aria-label="Carousel Page 1" class="dot"></li>
+          </ul>
+          <ul class="controls-container" id="main-slide-controls-container">
+            <li
+              class="prev"
+              aria-controls="customize"
+              tabindex="-1"
+              data-controls="prev"
+            >
+              <img src="assets/icons/main-slider-arrow-right.svg" />
+            </li>
+            <li
+              class="next"
+              aria-controls="customize"
+              tabindex="-1"
+              data-controls="next"
+            >
+              <img src="assets/icons/main-slider-arrow-left.svg" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul id="main-slider">
+        <li class="main-slider_item">
+          <img src="./assets/images/main-slider/1.jpg" alt="Slider Image 1" />
+          <div class="main-slider_item-info">
+            <h3>Bohauss</h3>
+            <p>Luxury big sofa 2-seat</p>
+            <div class="wrapper">
+              <span>Rp 17.000.000</span>
+              <img src="./assets/icons/arrow-right-black.svg" />
+            </div>
+          </div>
+        </li>
+        <li class="main-slider_item">
+          <img src="./assets/images/main-slider/2.jpg" alt="Slider Image 2" />
+          <div class="main-slider_item-info">
+            <h3>Bohauss</h3>
+            <p>Luxury big sofa 2-seat</p>
+            <div class="wrapper">
+              <span>Rp 17.000.000</span>
+              <img src="./assets/icons/arrow-right-black.svg" />
+            </div>
+          </div>
+        </li>
+        <li class="main-slider_item">
+          <img src="./assets/images/main-slider/3.jpg" alt="Slider Image 3" />
+          <div class="main-slider_item-info">
+            <h3>Bohauss</h3>
+            <p>Luxury big sofa 2-seat</p>
+            <div class="wrapper">
+              <span>Rp 17.000.000</span>
+              <img src="./assets/icons/arrow-right-black.svg" />
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="promo_info">
+        <h1 class="promo-heading">High-Quality Furniture Just For You</h1>
+        <p class="promo-paragraph">
+          Our furniture is made from selected and best quality materials that
+          are suitable for your dream home
+        </p>
+        <button class="promo-button"><a href="#">Shop Now</a></button>
+      </div>
+    </section>
+    <section class="guarantee">
+      <div class="container">
+        <div class="guarantee_wrapper">
+          <div class="guarantee_item">
+            <img src="assets/icons/trophy-icon.svg" />
+            <div>
+              <h3 class="guarantee_item_heading">High Quality</h3>
+              <p class="guarantee_item-paragraph">crafted from top materials</p>
+            </div>
+          </div>
+          <div class="guarantee_item">
+            <img src="assets/icons/guarantee-icon.svg" />
+            <div>
+              <h3 class="guarantee_item_heading">Warrany Protection</h3>
+              <p class="guarantee_item-paragraph">Over 2 years</p>
+            </div>
+          </div>
+          <div class="guarantee_item">
+            <img src="assets/icons/shipping-icon.svg" />
+            <div>
+              <h3 class="guarantee_item_heading">Free Shipping</h3>
+              <p class="guarantee_item-paragraph">Order over 150 $</p>
+            </div>
+          </div>
+          <div class="guarantee_item">
+            <img src="assets/icons/customer-support-icon.svg" />
+            <div>
+              <h3 class="guarantee_item_heading">24 / 7 Support</h3>
+              <p class="guarantee_item-paragraph">Dedicated support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="container">
+        <h2 class="products-heading">Our Products</h2>
+        <div class="products_grid" data-grid></div>
+        <button class="button-show-more"><a href="#">Show More</a></button>
+      </div>
+    </section>
+    <section class="preview">
+      <div class="preview_info">
+        <h2 class="preview-heading">50+ Beautiful rooms inspiration</h2>
+        <p class="preview-paragraph">
+          Our designer already made a lot of beautiful prototipe of rooms that
+          inspire you
+        </p>
+        <button class="preview-button">Explore More</button>
+      </div>
+      <ul id="preview-slider-customize-thumbnails" class="customize-thumbnails">
+        <li data-nav="1" aria-label="Carousel Page 1" class="dot"></li>
+        <li data-nav="2" aria-label="Carousel Page 1" class="dot"></li>
+        <li data-nav="3" aria-label="Carousel Page 1" class="dot"></li>
+      </ul>
+      <ul class="controls-container" id="preview-slider-controls-container">
+        <li
+          class="prev"
+          aria-controls="customize"
+          tabindex="-1"
+          data-controls="prev"
+        >
+          <img src="assets/icons/second-slider-arrow-left.svg" />
+        </li>
+        <li
+          class="next"
+          aria-controls="customize"
+          tabindex="-1"
+          data-controls="next"
+        >
+          <img src="assets/icons/second-slider-arrow-rigth.svg" />
+        </li>
+      </ul>
+      <div id="preview-slider">
+        <div class="custom-slider-item">
+          <img src="./assets/images/second-slider/1.jpg" alt="" />
+          <div class="slide-info">
+            <div class="counter">
+              <span>01</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="2"
+                viewBox="0 0 27 2"
+                fill="none"
+              >
+                <path d="M0 1H27" stroke="#898989" />
+              </svg>
+              <span>Bed Room</span>
+            </div>
+            <h3>Inner Peace</h3>
+            <button class="arrow-btn">
+              <img src="./assets/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="custom-slider-item">
+          <img src="./assets/images/second-slider/2.jpg" alt="" />
+          <div class="slide-info">
+            <div class="counter">
+              <span>01</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="2"
+                viewBox="0 0 27 2"
+                fill="none"
+              >
+                <path d="M0 1H27" stroke="#898989" />
+              </svg>
+              <span>Bed Room</span>
+            </div>
+            <h3>Inner Peace</h3>
+            <button class="arrow-btn">
+              <img src="./assets/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="custom-slider-item">
+          <img src="./assets/images/second-slider/3.jpg" alt="" />
+          <div class="slide-info">
+            <div class="counter">
+              <span>01</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="2"
+                viewBox="0 0 27 2"
+                fill="none"
+              >
+                <path d="M0 1H27" stroke="#898989" />
+              </svg>
+              <span>Bed Room</span>
+            </div>
+            <h3>Inner Peace</h3>
+            <button class="arrow-btn">
+              <img src="./assets/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="custom-slider-item mobile">
+          <img src="./assets/images/second-slider/2.jpg" alt="" />
+          <div class="slide-info">
+            <div class="counter">
+              <span>01</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="2"
+                viewBox="0 0 27 2"
+                fill="none"
+              >
+                <path d="M0 1H27" stroke="#898989" />
+              </svg>
+              <span>Bed Room</span>
+            </div>
+            <h3>Inner Peace</h3>
+            <button class="arrow-btn">
+              <img src="./assets/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="custom-slider-item mobile">
+          <img src="./assets/images/second-slider/3.jpg" alt="" />
+          <div class="slide-info">
+            <div class="counter">
+              <span>01</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="2"
+                viewBox="0 0 27 2"
+                fill="none"
+              >
+                <path d="M0 1H27" stroke="#898989" />
+              </svg>
+              <span>Bed Room</span>
+            </div>
+            <h3>Inner Peace</h3>
+            <button class="arrow-btn">
+              <img src="./assets/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tricks">
+      <div class="container">
+        <h2 class="tricks-heading">Tips & Tricks</h2>
+
+        <ul class="controls-container" id="third-slider-controls-container">
+          <li
+            class="prev white"
+            aria-controls="customize"
+            tabindex="-1"
+            data-controls="prev"
+          >
+            <img src="assets/icons/second-slider-arrow-left.svg" />
+          </li>
+          <li
+            class="next white"
+            aria-controls="customize"
+            tabindex="-1"
+            data-controls="next"
+          >
+            <img src="assets/icons/second-slider-arrow-rigth.svg" />
+          </li>
+        </ul>
+        <div id="third-slider">
+          <div>
+            <div class="slider-item">
+              <img src="./assets/images/third-slider/1.jpg" alt="" />
+              <div class="slider-item_info">
+                <h3>How to create a living room to love</h3>
+                <span>20 jan 2020</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="slider-item">
+              <img src="./assets/images/third-slider/2.jpg" alt="" />
+              <div class="slider-item_info">
+                <h3>Solution for clean look working space</h3>
+                <span>10 jan 2020</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="slider-item">
+              <img src="./assets/images/third-slider/3.jpg" alt="" />
+              <div class="slider-item_info">
+                <h3>Make your cooking activity more fun with good setup</h3>
+                <span>20 jan 2020</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="slider-item">
+              <img src="./assets/images/third-slider/1.jpg" alt="" />
+              <div class="slider-item_info">
+                <h3>How to create a living room to love</h3>
+                <span>20 jan 2020</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="slider-item">
+              <img src="./assets/images/third-slider/2.jpg" alt="" />
+              <div class="slider-item_info">
+                <h3>Solution for clean look working space</h3>
+                <span>10 jan 2020</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="slider-item">
+              <img src="./assets/images/third-slider/3.jpg" alt="" />
+              <div class="slider-item_info">
+                <h3>Make your cooking activity more fun with good setup</h3>
+                <span>20 jan 2020</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul id="third-slider-customize-thumbnails" class="customize-thumbnails">
+          <li data-nav="1" aria-label="Carousel Page 1" class="dot"></li>
+          <li data-nav="2" aria-label="Carousel Page 1" class="dot"></li>
+          <li data-nav="3" aria-label="Carousel Page 1" class="dot"></li>
+          <li data-nav="4" aria-label="Carousel Page 1" class="dot"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="share">
+      <h5 class="share-subtitle">Share your setup with</h5>
+      <h2 class="share-heading">#FuniroFurniture</h2>
+      <div class="grid-container">
+        <img src="./assets/images/grid/1.jpg" class="first" alt="" />
+        <img src="./assets/images/grid/2.jpg" class="second" alt="" />
+        <img src="./assets/images/grid/3.jpg" class="third" alt="" />
+        <img src="./assets/images/grid/4.jpg" class="four" alt="" />
+        <img src="./assets/images/grid/5.jpg" class="five" alt="" />
+        <img src="./assets/images/grid/6.jpg" class="six" alt="" />
+        <img src="./assets/images/grid/7.jpg" class="seven" alt="" />
+        <img src="./assets/images/grid/8.jpg" class="eight" alt="" />
+        <img src="./assets/images/grid/9.jpg" class="nine" alt="" />
+      </div>
+    </section>
+    <div class="container"><hr class="footer-hr" /></div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_grid">
+          <div class="grid-item">
+            <a href="index.html">
+              <img src="./assets/icons/furniro-logo.svg" alt="Furniro Logo" />
+            </a>
+            <p class="grid-item-text">
+              Worldwide furniture store since 2020. We sell over 1000+ branded
+              products on our website
+            </p>
+            <div class="grid-item-subflex">
+              <img src="./assets/icons/location-icon.svg" alt="location-icon" />
+              <address class="grid-item-text">
+                Sawojajar Malang, Indonesia
+              </address>
+            </div>
+            <div class="grid-item-subflex">
+              <img src="./assets/icons/phone-icon.svg" alt="phone-icon" />
+              <a href="tel:+62894563455" class="grid-item-text"
+                >+6289 456 3455</a
+              >
+            </div>
+            <a href="www.funiro.com" class="grid-item-text">www.funiro.com</a>
+          </div>
+          <div class="grid-item">
+            <h3 class="grid-item-heading">Menu</h3>
+            <span class="grid-item-text"> Products </span
+            ><span class="grid-item-text">Rooms</span
+            ><span class="grid-item-text">Inspirations</span
+            ><span class="grid-item-text">About Us</span>
+            <span class="grid-item-text">Terms & Policy</span>
+          </div>
+          <div class="grid-item">
+            <h3 class="grid-item-heading">Account</h3>
+            <span class="grid-item-text">My Account</span>
+            <span class="grid-item-text">Checkout</span>
+            <span class="grid-item-text">My Cart</span>
+            <span class="grid-item-text">My catalog</span>
+          </div>
+          <div class="grid-item">
+            <h3 class="grid-item-heading">Stay Connected</h3>
+            <span class="grid-item-text">Facebook</span>
+            <span class="grid-item-text">Instagram</span>
+            <span class="grid-item-text">Twitter</span>
+          </div>
+          <div class="grid-item">
+            <h3 class="grid-item-heading">Stay Updated</h3>
+            <form class="email_form">
+              <input type="email" placeholder="Enter your email" name="email" />
+              <button type="submit">
+                <img src="./assets/icons/send-icon.svg" alt="Send Icon" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

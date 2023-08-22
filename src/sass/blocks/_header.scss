@@ -1,0 +1,115 @@
+.header {
+  position: relative;
+  z-index: 20;
+  margin-top: 40px;
+
+  width: 100%;
+  height: 40px;
+  padding: 0 138px 0 62px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  &_list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  &_item {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+
+    text-transform: none;
+    color: var(--black);
+
+    cursor: pointer;
+  }
+  .dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  form.search {
+    margin-right: auto;
+
+    border: none;
+    padding: 0;
+  }
+
+  input.search-input {
+    border: none;
+    width: 473px;
+    padding: 12px 40px;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6667 16.6667L12.5802 12.5802M12.5802 12.5802C13.5604 11.6 14.1667 10.2458 14.1667 8.75004C14.1667 5.7585 11.7416 3.33337 8.75001 3.33337C5.75847 3.33337 3.33334 5.7585 3.33334 8.75004C3.33334 11.7416 5.75847 14.1667 8.75001 14.1667C10.2458 14.1667 11.5999 13.5604 12.5802 12.5802Z' stroke='%23333333' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 13px center;
+
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-3);
+    cursor: pointer;
+  }
+
+  &-controls {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .profile-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    justify-content: center;
+    gap: 30px;
+    input.search-input {
+      width: 300px;
+    }
+    form.search {
+      margin-right: 0;
+    }
+
+    &_list {
+      gap: 20px;
+    }
+    &-controls {
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .hamburger-menu {
+    display: block;
+  }
+  .navbar {
+    &_list {
+      display: none;
+    }
+    form.search input.search-input {
+      display: none;
+    }
+    .hamburger-menu .search input.search-input {
+      display: block;
+    }
+    &-controls {
+      margin-left: auto;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 0;
+  }
+}
